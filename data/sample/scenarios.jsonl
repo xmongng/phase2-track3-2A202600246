@@ -7,3 +7,11 @@
 {"id":"S07_dead_letter","query":"System failure cannot recover after multiple attempts","expected_route":"error","requires_approval":false,"should_retry":true,"max_attempts":1,"tags":["dead_letter","retry"]}
 {"id":"S08_cancel","query":"Cancel my subscription immediately","expected_route":"risky","requires_approval":true,"should_retry":false,"tags":["risky","custom"]}
 {"id":"S09_track","query":"Track my shipment for order 67890","expected_route":"tool","requires_approval":false,"should_retry":false,"tags":["tool","custom"]}
+{"id":"S10_simple","query":"What are your business hours?","expected_route":"simple","requires_approval":false,"should_retry":false,"tags":["simple","custom"]}
+{"id":"S11_tool","query":"Check inventory for item SKU-991","expected_route":"tool","requires_approval":false,"should_retry":false,"tags":["tool","custom"]}
+{"id":"S12_missing","query":"Is this included?","expected_route":"missing_info","requires_approval":false,"should_retry":false,"tags":["clarification","custom"]}
+{"id":"S13_risky","query":"Revoke API access for user 404","expected_route":"risky","requires_approval":true,"should_retry":false,"tags":["hitl","risky","custom"]}
+{"id":"S14_error","query":"Service unavailable when fetching user profile","expected_route":"error","requires_approval":false,"should_retry":true,"tags":["retry","custom"]}
+{"id":"S15_simple","query":"Tell me a joke about programming","expected_route":"simple","requires_approval":false,"should_retry":false,"tags":["simple","custom"]}
+{"id":"S16_tool","query":"Show me the latest invoice","expected_route":"tool","requires_approval":false,"should_retry":false,"tags":["tool","custom"]}
+{"id":"S17_risky","query":"Erase my browsing history","expected_route":"risky","requires_approval":true,"should_retry":false,"tags":["hitl","destructive","custom"]}
